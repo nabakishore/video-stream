@@ -10,3 +10,23 @@ https://medium.com/@kevin.michael.horan/distributed-video-streaming-with-python-
 
 Kafka Instructions:
 *******************
+Source code:
+# tar -xzf kafka_2.12-2.4.1.tgz
+# cd kafka_2.12-2.4.1
+# 
+Zookeeper:
+# bin/zookeeper-server-start.sh config/zookeeper.properties
+
+For multinode setup refer to https://medium.com/@kiranps11/kafka-and-zookeeper-multinode-cluster-setup-3511aef4a505
+
+Kafka broker:
+# bin/kafka-server-start.sh config/server.properties               <---- Run server as root
+
+Create Topic for publisher(producer) and subscriber(consumer)
+# bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+
+REFERENCE:
+https://kafka.apache.org/quickstart
+
+
+
