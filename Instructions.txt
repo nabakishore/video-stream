@@ -28,5 +28,8 @@ Create Topic for publisher(producer) and subscriber(consumer)
 REFERENCE:
 https://kafka.apache.org/quickstart
 
+Kafka Listener setup for AWS and Docker
+
+https://www.confluent.jp/blog/kafka-listeners-explained/
 
 
